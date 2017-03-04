@@ -1,0 +1,144 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 90px;
+}
+
+.container {
+    background-color: #eceff1;
+}
+
+/*header*/
+.navbar-default {
+    border: 0;
+    background-color: #006064;
+    margin-bottom: 30px;
+    border-radius: 0;
+    height: 100px;
+}
+
+.navbar-default .container {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.navbar-default h1 {
+    font-size: 30px;
+    color: #fff;
+}
+
+/*search*/
+#search_form {
+    padding: 15px;
+    display: block;
+    background-color: #B0BEC5;
+}
+
+#spinner {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+/*elements*/
+#element_container .row .wando-card {
+    margin-top: 20px;
+}
+
+#element_container::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+#element_container a:hover {
+    text-decoration: none;
+}
+
+#element_container a:hover > .wando-card {
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+}
+
+.wando-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    height: 375px;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+}
+
+.wando-card .product-img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.wando-card h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.wando-card .merchant-logo {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.wando-card .rating {
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.wando-card .price {
+    text-align: center;
+    color: #B71C1C;
+    font-size: 18px;
+}
+
+.wando-card .btn-store-link {
+    margin: auto;
+    display: block;
+}
+
+/*pagination*/
+.pagination a {
+    cursor: pointer;
+}
+
+/*footer*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #006064;
+}
+
+.footer .container {
+    background: transparent;
+}
+
+.footer a {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+/*media queries*/
+@media(max-width: 767px) {
+    .navbar-default {
+        margin-bottom: -1px;
+    }
+    body {
+        margin-bottom: 60px;
+    }
+}
